@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SpacexdataApp</string>
+    <string name="rocket_name">ROCKET NAME</string>
+    <string name="rocket_country">ROCKET COUNTRY</string>
+    <string name="active">Active</string>
+    <string name="all">All</string>
+</resources>

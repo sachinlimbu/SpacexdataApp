@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_padding"
+    android:id="@+id/rocket_list_id"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        >
+
+        <TextView
+            android:id="@+id/rocket_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/rocket_name"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/rocket_country_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/rocket_country"
+            android:layout_below="@+id/rocket_name_id"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/rocket_engineCount_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_text_size"
+            android:text="ENGINE COUNT"
+            android:layout_below="@+id/rocket_country_name_id"
+            android:gravity="center"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

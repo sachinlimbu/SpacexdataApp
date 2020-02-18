@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout_Id"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/padding_frame"
+        >
+        <RadioGroup
+            android:id="@+id/radioButton_custom"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <RadioButton
+                android:text="@string/all"
+                android:id="@+id/rb_one"
+                android:textSize="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:text="@string/active"
+                android:id="@+id/rb_two"
+                android:textSize="@dimen/default_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+    </FrameLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/frameLayout_Id"
+        android:id="@+id/rocker_recyclerView_id"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+</RelativeLayout>
